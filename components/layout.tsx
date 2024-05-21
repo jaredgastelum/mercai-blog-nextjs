@@ -1,6 +1,7 @@
 import Alert from "./alert";
 import Footer from "./footer";
 import Meta from "./meta";
+import ImportedHeader from "./importedHeader";
 
 export default function Layout({ preview, children }) {
   return (
@@ -8,6 +9,7 @@ export default function Layout({ preview, children }) {
       <Meta />
       <div className="min-h-screen">
         {/* <Alert preview={preview} /> */}
+        <ImportedHeader />
         <main>{children}</main>
       </div>
       <Footer />
